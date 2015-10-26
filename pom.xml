@@ -26,6 +26,22 @@
   		<groupId>org.biojava</groupId>
   		<artifactId>biojava-alignment</artifactId>
   		<version>4.1.0</version>
+  		<exclusions>
+  			<exclusion>
+  				<artifactId>biojava-phylo</artifactId>
+  				<groupId>org.biojava</groupId>
+  			</exclusion>
+  		</exclusions>
+  	</dependency>
+  	<!--  <dependency>
+  		<groupId>org.biojava</groupId>
+  		<artifactId>biojava-phylo</artifactId>
+  		<version>4.1.0</version>
+  	</dependency>-->
+  	<dependency>
+  		<groupId>org.biojava</groupId>
+  		<artifactId>biojava-phylo</artifactId>
+  		<version>4.1.1-SNAPSHOT</version>
   	</dependency>
   </dependencies>
 </project>
