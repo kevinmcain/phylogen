@@ -16,7 +16,7 @@ import org.biojava.nbio.core.sequence.io.FastaReaderHelper;
 import org.biojava.nbio.core.sequence.template.Sequence;
 import org.biojava.nbio.core.sequence.DNASequence;
 import org.biojava.nbio.core.sequence.MultipleSequenceAlignment;
-import org.biojava.nbio.core.sequence.compound.NucleotideCompound;
+import org.biojava.nbio.core.sequence.compound.NucleotideCompound; 
 import org.biojava.nbio.core.util.ConcurrencyTools;
 import org.biojava.nbio.phylo.TreeConstructionAlgorithm;
 import org.biojava.nbio.phylo.TreeConstructor;
@@ -32,12 +32,15 @@ public class Main {
 		
 		// http://www.ncbi.nlm.nih.gov/genome/browse/ 
 		String[] fastaFileNames = new String[] {
-				"resources/genomes/leukemiavirus.fna",
-				"resources/genomes/carnationetchedringvirus.fna",
-				"resources/genomes/hepbvirus.fna"};
+				"resources/genomes/leukemiavirus.fna", // Retroviridae AF033812.1
+				"resources/genomes/carnationetchedringvirus.fna", // Caulimoviridae X04658.1
+				"resources/genomes/hepbvirus.fna", // Hepadnaviridae X04615.1
+				"resources/genomes/bovineleukemiavirus.fna", // Retroviridae AF033818.1
+				"resources/genomes/fujinamisarcoma.fna", // Retroviridae AF033810.1
+				"resources/genomes/tobaccoveinclearing.fna"}; //Caulimoviridae AF190123.1
 		
 		Map<String, DNASequence> linkedHashMap = null;
-		
+		 
 		try
 		{
 			linkedHashMap = getLinkedHashMapOfSeq(fastaFileNames);	
