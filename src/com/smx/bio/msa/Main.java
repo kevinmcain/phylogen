@@ -31,13 +31,19 @@ public class Main {
 	public static void main(String[] args) {
 		
 		// http://www.ncbi.nlm.nih.gov/genome/browse/ 
-		String[] fastaFileNames = new String[] {
-				"resources/genomes/leukemiavirus.fna", // Retroviridae AF033812.1
-				"resources/genomes/carnationetchedringvirus.fna", // Caulimoviridae X04658.1
-				"resources/genomes/hepbvirus.fna", // Hepadnaviridae X04615.1
-				"resources/genomes/bovineleukemiavirus.fna", // Retroviridae AF033818.1
-				"resources/genomes/fujinamisarcoma.fna", // Retroviridae AF033810.1
-				"resources/genomes/tobaccoveinclearing.fna"}; //Caulimoviridae AF190123.1
+		String[] fastaFileNames = new String[] { 
+				"resources/genomes/aone.fna",
+				"resources/genomes/atwo.fna",
+				"resources/genomes/athree.fna",
+				"resources/genomes/afour.fna",
+				"resources/genomes/afive.fna"};
+		
+				/////"resources/genomes/leukemiavirus.fna", // Retroviridae AF033812.1
+				//"resources/genomes/carnationetchedringvirus.fna", // Caulimoviridae X04658.1
+				//"resources/genomes/hepbvirus.fna", // Hepadnaviridae X04615.1
+				/////"resources/genomes/bovineleukemiavirus.fna", // Retroviridae AF033818.1
+				//"resources/genomes/tobaccoveinclearing.fna", // Caulimoviridae AF190123.1
+				/////"resources/genomes/fujinamisarcoma.fna"}; // Retroviridae AF033810.1
 		
 		Map<String, DNASequence> linkedHashMap = null;
 		 
